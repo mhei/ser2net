@@ -1,0 +1,7 @@
+language: c
+
+compiler:
+  - gcc
+  - clang
+
+script: autoreconf -f -i -s && ./configure && make && make distcheck
